@@ -14,6 +14,8 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { Provider as PaperProvider, DefaultTheme } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+// import ResponsiveScreen from './src/utils/responsive_screen'
+import ResponsiveScreen from 'react-native-auto-responsive-screen'
 
 import getStore from './src/redux/store'
 
@@ -25,6 +27,10 @@ import RootNavigation from './src/routes/root'
 
 
 const { store, persistor } = getStore()
+/**
+ * WIDTH AND HEIGHT BASE ON MOCKUP
+ */
+ResponsiveScreen.init(414, 852)
 
 const theme = {
   ...DefaultTheme,

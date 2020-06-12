@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import { useSafeArea } from 'react-native-safe-area-context';
 import { connect } from 'react-redux'
+import ResponsiveScreen from 'react-native-auto-responsive-screen'
 
 const TabDashboardComponent = ({ state, descriptors, navigation, dashboardConfig, isAuthenticated }) => {
     const focusedOptions = descriptors[state.routes[state.index].key].options;
@@ -55,10 +56,10 @@ const TabDashboardComponent = ({ state, descriptors, navigation, dashboardConfig
                         testID={options.tabBarTestID}
                         onPress={onPress}
                         onLongPress={onLongPress}
-                        style={{ flex: 1, height: 60, backgroundColor: 'white', justifyContent: 'space-evenly', alignItems: 'center', marginBottom: insets.bottom / 2 }}
+                        style={{ flex: 1, height: ResponsiveScreen.normalize(60), backgroundColor: 'white', justifyContent: 'space-evenly', alignItems: 'center', marginBottom: insets.bottom / 2 }}
                     >
-                        <View style={{ height: 24, width: 24, backgroundColor: 'grey' }}></View>
-                        <Text style={{ color: isFocused ? '#673ab7' : '#222' }}>
+                        <View style={{ height: ResponsiveScreen.normalize(24), width: ResponsiveScreen.normalize(24), backgroundColor: 'grey' }}></View>
+                        <Text style={{ color: isFocused ? '#673ab7' : '#222', fontSize: ResponsiveScreen.normalize(12) }}>
                             {
                                 dashboardConfig[index].title
                             }

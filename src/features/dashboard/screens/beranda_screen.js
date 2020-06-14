@@ -1,13 +1,13 @@
 import React from 'react'
 import { ScrollView, View } from 'react-native'
-import { Appbar, Button, Card, Checkbox, Switch } from 'react-native-paper'
+import { Appbar } from 'react-native-paper'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { ScreenName } from '../../../utils/constan'
 import styles from '../styles/beranda_style'
 import ResponsiveScreen from 'react-native-auto-responsive-screen'
 import ShimmerPlaceHolder from 'react-native-shimmer-placeholder'
 
-const BerandaScreen = ({ navigation, setAuth, isAuthenticated }) => {
+const BerandaScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <Appbar.Header style={{ height: ResponsiveScreen.fontSize(52) }}>
@@ -39,7 +39,7 @@ const Berandabanner = () => {
     <ShimmerPlaceHolder
       style={{
         width: ResponsiveScreen.fontSize(436),
-        height: ResponsiveScreen.fontSize(176),
+        height: ResponsiveScreen.fontSize(176)
       }}
     />
   )
@@ -52,7 +52,7 @@ const BerandaFooterbanner = () => {
         width: ResponsiveScreen.fontSize(414),
         height: ResponsiveScreen.fontSize(145),
         borderBottomLeftRadius: 15,
-        borderBottomRightRadius: 15,
+        borderBottomRightRadius: 15
       }}
     />
   )
@@ -65,7 +65,7 @@ const BerandaMenu = () => {
         style={{
           width: ResponsiveScreen.fontSize(35),
           height: ResponsiveScreen.fontSize(35),
-          marginHorizontal: 30,
+          marginHorizontal: 30
         }}
       />
       <View style={{ height: ResponsiveScreen.fontSize(45) }} />
@@ -86,7 +86,7 @@ const BerandaMenu = () => {
         style={{
           width: ResponsiveScreen.fontSize(114),
           height: ResponsiveScreen.fontSize(19),
-          marginLeft: 15,
+          marginLeft: 15
         }}
       />
       <View style={{ height: ResponsiveScreen.fontSize(20) }} />
@@ -116,7 +116,7 @@ const HorizontalListProduct = () => {
         style={{
           width: ResponsiveScreen.fontSize(178),
           height: ResponsiveScreen.fontSize(19),
-          marginLeft: 15,
+          marginLeft: 15
         }}
       />
       <View style={{ height: ResponsiveScreen.fontSize(20) }} />

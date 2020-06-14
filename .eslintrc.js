@@ -4,5 +4,6 @@ module.exports = {
   rules: {
     semi: ['error', 'never'],
     'no-console': ['error', { allow: ['warn', 'error'] }],
-  },
+    'comma-dangle': ['error', 'never']
+  }
 }

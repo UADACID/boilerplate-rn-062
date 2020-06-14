@@ -15,8 +15,6 @@ import RegisterScreen from '../features/auth/screens/register_screen'
 import DashboardScreen from '../features/dashboard/screens/dashboard_screen'
 import CartScreen from '../features/cart/screens/cart_screen'
 
-import AuthMiddleware from '../utils/auth_middleware'
-
 enableScreens()
 const Stack = createNativeStackNavigator()
 

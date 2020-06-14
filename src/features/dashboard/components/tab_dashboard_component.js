@@ -9,7 +9,7 @@ const TabDashboardComponent = ({
   descriptors,
   navigation,
   dashboardConfig,
-  isAuthenticated,
+  isAuthenticated
 }) => {
   const focusedOptions = descriptors[state.routes[state.index].key].options
   const insets = useSafeArea()
@@ -31,7 +31,7 @@ const TabDashboardComponent = ({
           const event = navigation.emit({
             type: 'tabPress',
             target: route.key,
-            canPreventDefault: true,
+            canPreventDefault: true
           })
 
           if (!isFocused && !event.defaultPrevented) {
@@ -42,7 +42,7 @@ const TabDashboardComponent = ({
         const onLongPress = () => {
           navigation.emit({
             type: 'tabLongPress',
-            target: route.key,
+            target: route.key
           })
         }
 
@@ -62,19 +62,19 @@ const TabDashboardComponent = ({
               backgroundColor: 'white',
               justifyContent: 'space-evenly',
               alignItems: 'center',
-              marginBottom: insets.bottom / 2,
+              marginBottom: insets.bottom / 2
             }}>
             <View
               style={{
                 height: ResponsiveScreen.normalize(24),
                 width: ResponsiveScreen.normalize(24),
-                backgroundColor: 'grey',
+                backgroundColor: 'grey'
               }}
             />
             <Text
               style={{
                 color: isFocused ? '#673ab7' : '#222',
-                fontSize: ResponsiveScreen.fontSize(12),
+                fontSize: ResponsiveScreen.fontSize(12)
               }}>
               {dashboardConfig[index].title}
             </Text>
@@ -86,7 +86,7 @@ const TabDashboardComponent = ({
 }
 
 const mapStateToProps = state => ({
-  isAuthenticated: state.authReducer.isAuthenticated,
+  isAuthenticated: state.authReducer.isAuthenticated
 })
 
 export default connect(mapStateToProps)(TabDashboardComponent)

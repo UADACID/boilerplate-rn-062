@@ -14,16 +14,18 @@ const AccountScreen = ({ setAuth, isAuthenticated, navigation }) => {
           mode="contained"
           color="red"
           onPress={() => {
-            setAuth()
             navigation.reset({
-              index: 0,
+              index: 1,
               routes: [
                 {
-                  name: ScreenName.berandaStack,
-                  params: { screen: ScreenName.berandaScreen }
+                  name: ScreenName.dashboardScreen
+                },
+                {
+                  name: ScreenName.loginScreen
                 }
               ]
             })
+            setAuth()
           }}>
           log out
         </Button>

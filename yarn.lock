@@ -5065,10 +5065,10 @@ react-is@^16.12.0, react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1, react-
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-native-auto-responsive-screen@^1.0.3:
+react-native-auto-responsive-screen@^1.0.6:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-auto-responsive-screen/-/react-native-auto-responsive-screen-1.1.3.tgz#d43ebfbb43d6dd45e9073d0495730626374260b5"
-  integrity sha512-lFA19xQy3VwrsWg/5Xye9Pu18cKE13BX3N3dBjZVQBZDS4otz3newc6KE2EI9Mvt2f0OU0xLAZfaunPOXptWtw==
+  resolved "https://registry.yarnpkg.com/react-native-auto-responsive-screen/-/react-native-auto-responsive-screen-1.1.6.tgz#c0fead7b5d476471ba4ea8dc1d69b6bf64bb84a2"
+  integrity sha512-MiRVEUKDRDtqv/Tx5qah9KatRShvODblBT/2Ik+QUsDpPOB5ZPTuyfWBYNgNp+YkMCYRM5jBujhG2gxAa3Hq7A==
 
 react-native-gesture-handler@^1.6.1:
   version "1.6.1"

@@ -22,7 +22,7 @@ const root = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: false
       }}
       initialRouteName={ScreenName.dashboardScreen}>
       <Stack.Screen name={ScreenName.splashScreen} component={SplashScreen} />
@@ -31,14 +31,14 @@ const root = () => {
         name={ScreenName.loginScreen}
         component={LoginScreen}
         options={{
-          stackPresentation: 'modal',
+          stackPresentation: 'modal'
         }}
       />
       <Stack.Screen
         name={ScreenName.registerScreen}
         component={RegisterScreen}
         options={{
-          stackPresentation: 'modal',
+          stackPresentation: 'modal'
         }}
       />
       <Stack.Screen

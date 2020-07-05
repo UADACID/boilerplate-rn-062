@@ -7,12 +7,13 @@
  */
 
 import 'react-native-gesture-handler'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { Provider as PaperProvider, DefaultTheme } from 'react-native-paper'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import SplashScreen from 'react-native-splash-screen'
 
 // import ResponsiveScreen from './src/utils/responsive_screen'
 import ResponsiveScreen from 'react-native-auto-responsive-screen'
@@ -42,6 +43,9 @@ const theme = {
 }
 
 function App() {
+  useEffect(() => {
+    SplashScreen.hide()
+  }, [])
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, ActivityIndicator } from 'react-native'
 import { StackActions } from '@react-navigation/native'
 import { connect } from 'react-redux'
@@ -6,38 +6,32 @@ import { connect } from 'react-redux'
 import { ScreenName } from '../utils/constan'
 
 const authHOC = (DestinationScreen, isRoot = false) => {
-  class AuthMiddleware extends Component {
-    state = {
-      isLogin: false
-    }
+  const AuthMiddleware = props => {
+    const [isLogin, setIsLogin] = useState(false)
 
-    componentDidMount() {
-      const { isAuthenticated } = this.props
-      if (!isAuthenticated) {
+    useEffect(() => {
+      if (!props.isAuthenticated) {
         if (isRoot) {
-          this.props.navigation.dispatch(
+          props.navigation.dispatch(
             StackActions.replace(ScreenName.loginScreen)
           )
         } else {
-          this.props.navigation.navigate(ScreenName.loginScreen)
+          props.navigation.navigate(ScreenName.loginScreen)
         }
       } else {
-        this.setState({
-          isLogin: true
-        })
+        setIsLogin(true)
       }
+    }, [props.isAuthenticated, props.navigation])
+
+    if (isLogin) {
+      return <DestinationScreen {...props} />
     }
-    render() {
-      if (this.state.isLogin) {
-        return <DestinationScreen {...this.props} />
-      }
-      return (
-        <View
-          style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <ActivityIndicator />
-        </View>
-      )
-    }
+
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator />
+      </View>
+    )
   }
 
   const mapStateToProps = state => ({

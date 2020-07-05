@@ -50,5 +50,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "sh precommit-check.sh"
+    }
   }
 }

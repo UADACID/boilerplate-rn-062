@@ -44,8 +44,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'alfa_v3_boilerplate' do
-  # Pods for alfa_v3_boilerplate
+target 'boilerplate' do
+  # Pods for boilerplate
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -77,7 +77,7 @@ target 'alfa_v3_boilerplate' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
   
-  target 'alfa_v3_boilerplateTests' do
+  target 'boilerplateTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -94,10 +94,10 @@ target 'alfa_v3_boilerplate' do
   end
 end
 
-target 'alfa_v3_boilerplate-tvOS' do
-  # Pods for alfa_v3_boilerplate-tvOS
+target 'boilerplate-tvOS' do
+  # Pods for boilerplate-tvOS
 
-  target 'alfa_v3_boilerplate-tvOSTests' do
+  target 'boilerplate-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

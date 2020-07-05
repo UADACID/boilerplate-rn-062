@@ -1,4 +1,4 @@
-package com.alfa_v3_boilerplate;// Change this to your package name.
+package com.boilerplate;// Change this to your package name.
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.alfa_v3_boilerplate;
+package com.boilerplate;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "alfa_v3_boilerplate";
+    return "boilerplate";
   }
 
   @Override

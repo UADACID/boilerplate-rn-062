@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "alfa_v3_boilerplate-tvOS.app"
-               BlueprintName = "alfa_v3_boilerplate-tvOS"
-               ReferencedContainer = "container:alfa_v3_boilerplate.xcodeproj">
+               BuildableName = "boilerplate-tvOS.app"
+               BlueprintName = "boilerplate-tvOS"
+               ReferencedContainer = "container:boilerplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "alfa_v3_boilerplate-tvOSTests.xctest"
-               BlueprintName = "alfa_v3_boilerplate-tvOSTests"
-               ReferencedContainer = "container:alfa_v3_boilerplate.xcodeproj">
+               BuildableName = "boilerplate-tvOSTests.xctest"
+               BlueprintName = "boilerplate-tvOSTests"
+               ReferencedContainer = "container:boilerplate.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "alfa_v3_boilerplate-tvOS.app"
-            BlueprintName = "alfa_v3_boilerplate-tvOS"
-            ReferencedContainer = "container:alfa_v3_boilerplate.xcodeproj">
+            BuildableName = "boilerplate-tvOS.app"
+            BlueprintName = "boilerplate-tvOS"
+            ReferencedContainer = "container:boilerplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "alfa_v3_boilerplate-tvOS.app"
-            BlueprintName = "alfa_v3_boilerplate-tvOS"
-            ReferencedContainer = "container:alfa_v3_boilerplate.xcodeproj">
+            BuildableName = "boilerplate-tvOS.app"
+            BlueprintName = "boilerplate-tvOS"
+            ReferencedContainer = "container:boilerplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

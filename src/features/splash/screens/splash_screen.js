@@ -17,35 +17,11 @@ const SplashScreen = ({ navigation, todos, add }) => {
       }}>
       <TouchableOpacity
         onPress={() => {
-          // navigation.navigate(ScreenName.onboardScreen)
-
-          /**
-           * REPLACE EXAMPLE
-           */
           navigation.dispatch(
             StackActions.replace(ScreenName.onboardScreen, {
               // user: 'jane',
             })
           )
-
-          /**
-           * RESET EXAMPLE
-           */
-          // navigation.reset({
-          //     index: 1,
-          //     routes: [
-          //         {
-          //             name: ScreenName.dashboardScreen,
-          //             params: { user: 'jane', screen: ScreenName.transactionStack },
-          //         },
-          //         {
-          //             name: ScreenName.loginScreen,
-          //             // params: { user: 'jane', screen: ScreenName.transactionStack },
-          //         },
-          //     ],
-          // })
-
-          // add()
         }}>
         <Text>Splash screen {Config.BASE_API_URL}</Text>
       </TouchableOpacity>

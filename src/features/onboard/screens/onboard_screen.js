@@ -1,13 +1,15 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import FastImage from 'react-native-fast-image'
+import { ScreenName } from '../../../utils/constan'
 
-const OnBoardScreen = () => {
+const OnBoardScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <TouchableOpacity
         onPress={() => {
-          alert('navigate to...')
+          // alert('navigate to...')
+          navigation.navigate(ScreenName.dashboardScreen)
         }}>
         <Text>Onboard screen</Text>
       </TouchableOpacity>
